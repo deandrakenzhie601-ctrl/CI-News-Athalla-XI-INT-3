@@ -1,0 +1,189 @@
+ERROR - 2026-10-03 02:48:25 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 C:\xampp2\htdocs\ci-news\app\Controllers\news.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(974): App\Controllers\News->index()
+#8 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\xampp2\htdocs\ci-news\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#13 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 C:\xampp2\htdocs\ci-news\app\Controllers\news.php(19): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(974): App\Controllers\News->index()
+#7 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\xampp2\htdocs\ci-news\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#12 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-10-03 02:48:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: news]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH\Controllers\news.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\News->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\ci-news\\public\\index.php')
+ERROR - 2026-10-03 02:48:32 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 C:\xampp2\htdocs\ci-news\app\Controllers\news.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(974): App\Controllers\News->index()
+#8 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\xampp2\htdocs\ci-news\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#13 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 C:\xampp2\htdocs\ci-news\app\Controllers\news.php(19): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(974): App\Controllers\News->index()
+#7 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\xampp2\htdocs\ci-news\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#12 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-10-03 02:48:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: news]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH\Controllers\news.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\News->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\ci-news\\public\\index.php')
+ERROR - 2026-10-03 03:10:03 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 C:\xampp2\htdocs\ci-news\app\Controllers\news.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(974): App\Controllers\News->index()
+#8 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\xampp2\htdocs\ci-news\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#13 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 C:\xampp2\htdocs\ci-news\app\Controllers\news.php(19): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(974): App\Controllers\News->index()
+#7 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\xampp2\htdocs\ci-news\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#12 C:\xampp2\htdocs\ci-news\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-10-03 03:10:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: news]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH\Controllers\news.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\News->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\ci-news\\public\\index.php')
+CRITICAL - 2026-10-03 03:39:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin_list_news.php"
+[Method: GET, Route: admin/news]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\NewsAdmin.php(12): view()
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\NewsAdmin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\ci-news\\public\\index.php')
+CRITICAL - 2026-10-03 03:41:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin_list_news.php"
+[Method: GET, Route: admin/news]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\NewsAdmin.php(12): view()
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\NewsAdmin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\ci-news\\public\\index.php')
+CRITICAL - 2026-10-03 03:42:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin_list_news.php"
+[Method: GET, Route: admin/news]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\NewsAdmin.php(12): view()
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\NewsAdmin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\ci-news\\public\\index.php')
